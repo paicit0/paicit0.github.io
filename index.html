@@ -2,29 +2,48 @@
 <html>
   <head>
   <style>
-  h1 {
+h1 {
   text-shadow: 3px 3px Black;
 }
+body {
+  background-color:LightGray;
+  margin: auto;
+  width: 30%;
+  border: 3px solid Red;
+  padding: 10px;
+}
+
+html {
+  background-color:Tomato;
+}
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.center {
-  margin: auto;
-  width: 45%;
-  border: 3px solid #73AD21;
-  padding: 10px;
+#heading {
+color: blue;
+
+
 }
+
+.popular {
+  border-style: dotted;
+  border-color: red;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+
 
 </style>
 
   <meta charset="utf-8">
   <title>Piyapat's example page</title>
 
-  <body style="background-color:Tomato">
-<div class="center" style="border: 4px solid black;background-color:Azure">
+  <body>
   <h1 style="text-align:center;border:5px solid Tomato;font-family:tahoma;font-size:2.5vw;color:Tomato;">Khon Kaen<br> University</h1>
 
   </head>
@@ -36,13 +55,14 @@ img {
       height="75%" alt="My test image">
       <figcaption style="text-align:center">Computer Engineering's Building</figcaption>
       </figure>
-      <p style="font-family:tahoma;color:DodgerBlue">Khon Kaen University has many faculties, such as:</p>
+      <p id="heading">Khon Kaen University has many faculties, such as:</p>
       <ul>
-            <li style="font-family:tahoma">Engineering</li>
-            <li style="font-family:tahoma">Science</li>
+            <li class="popular">Engineering</li>
+            <li>Science</li>
+            <li class="popular">Agriculture</li>
       </ul>
       <p style="font-family:tahoma">Have you been informed about these faculties? If not, please visit the following link: <a href="https://www.kku.ac.th/" target="_blank">KKU</a></p>
-</div>
+
 
 
   </body>
