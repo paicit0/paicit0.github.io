@@ -45,13 +45,50 @@ color: blue;
 
  @media only screen and (max-width: 600px)  {
   .text {
-    font-size: 50%;
+    font-size: 13px;
+  }
+
+  .img {
+    width:63%;
+    
+
+  }
+  .body {
+    width:50%;
+    
+  }
+}
+
+ @media only screen and (max-height: 600px)  {
+  .text {
+    font-size: 13px;
+  }
+  .img {
+    width:80%;
+    
+
+  }
+  .body {
+    width:90%;
+    
   }
 }
 
  @media only screen and (min-width: 992px) {
   .text {
-    font-size: 100px;
+    font-size: 20px;
+  }
+  .body {
+    width:40%;
+  }
+}
+
+ @media only screen and (min-height: 992px) {
+  .text {
+    font-size: 20px;
+  }
+  .body {
+    width:70%;
   }
 }
 
@@ -61,17 +98,17 @@ color: blue;
   <meta charset="utf-8">
   <title>Piyapat's example page</title>
 
-  <body>
+  <body class="body">
   <h1 style="text-align:center;border:5px solid Tomato;font-family:tahoma;font-size:2.5vw;color:Tomato;">Khon Kaen<br> University</h1>
 
   </head>
    
-      <img src="images/kku.jpg" title="KKU" width="75%"
+      <img class="img"; src="images/kku.jpg" title="KKU" width="75%"
       height="75%" alt="My test image" vspace="15">
       <figure>
-      <img src="images/coe_building.jpg" title="Building" width="75%"
+      <img class="img"; src="images/coe_building.jpg" title="Building" width="75%"
       height="75%" alt="My test image">
-      <figcaption style="text-align:center">Computer Engineering's Building</figcaption>
+      <figcaption class="text"; style="text-align:center">Computer Engineering's Building</figcaption>
       </figure>
       <p class ="text";>Khon Kaen University has many faculties, such as:</p>
       <ul class ="text";>
