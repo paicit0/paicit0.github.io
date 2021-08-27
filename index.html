@@ -1,124 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <link rel="shortcut icon" href="#">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  
+
+<script>
+
+    var array = new Array();
+    var p1 = prompt("Enter an integer (a negative integer to quit):");
 
 
-  <style>
-  
-h1 {
-  text-shadow: 3px 3px Black;
-}
-body {
-  background-color:LightGray;
-  margin: auto;
-  width: 30%;
-  border: 3px solid Red;
-  padding: 10px;
-}
+    while (p1 > 0) {
+        p1.split(' ');
+        array.push(p1);
+        var p1 = prompt("Enter an integer (a negative integer to quit):");
+        console.log(array);
+    }
 
-html {
-  background-color:Tomato;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#heading {
-color: blue;
-
-
-}
-
-.popular {
-  border-style: dotted;
-  border-color: red;
-  border-radius: 4px;
-  padding: 5px;
-
-}
-
- @media only screen and (max-width: 600px)  {
-  .text {
-    font-size: 13px;
-  }
-
-  .img {
-    width:63%;
-    
-
-  }
-  .body {
-    width:50%;
-    
-  }
-}
-
- @media only screen and (max-height: 600px)  {
-  .text {
-    font-size: 13px;
-  }
-  .img {
-    width:80%;
-    
-
-  }
-  .body {
-    width:90%;
-    
-  }
-}
-
- @media only screen and (min-width: 992px) {
-  .text {
-    font-size: 20px;
-  }
-  .body {
-    width:40%;
-  }
-}
-
- @media only screen and (min-height: 992px) {
-  .text {
-    font-size: 20px;
-  }
-  .body {
-    width:70%;
-  }
-}
-
-
-</style>
-
-  <meta charset="utf-8">
-  <title>Piyapat's example page</title>
-
-  <body class="body">
-  <h1 style="text-align:center;border:5px solid Tomato;font-family:tahoma;font-size:2.5vw;color:Tomato;">Khon Kaen<br> University</h1>
-
-  </head>
-   
-      <img class="img"; src="images/kku.jpg" title="KKU" width="75%"
-      height="75%" alt="My test image" vspace="15">
-      <figure>
-      <img class="img"; src="images/coe_building.jpg" title="Building" width="75%"
-      height="75%" alt="My test image">
-      <figcaption class="text"; style="text-align:center">Computer Engineering's Building</figcaption>
-      </figure>
-      <p class ="text";>Khon Kaen University has many faculties, such as:</p>
-      <ul class ="text";>
-            <li class="popular">Engineering</li>
-            <li>Science</li>
-            <li class="popular">Agriculture</li>
-      </ul>
-      <p class ="text";style="font-family:tahoma">Have you been informed about these faculties? If not, please visit the following link: <a href="https://www.kku.ac.th/" target="_blank">KKU</a></p>
+    const numb = array.map((i) => Number(i));
+    var total = 0;
+    for (let i =0; i<array.length; i++)
+     total += numb[i];
 
 
 
-  </body>
-</html>
+    var avg = total/array.length;
+    var a = avg.toFixed(2);
+    alert("For the list " + array + ", the average is " + a + ", the minimum is " + Math.min.apply(Math, numb) + ", and the maximum is " + Math.max.apply(Math, numb));
+
+
+</script>
+
+<head>
+</head>
+<body>
+</body>
+</html> 
