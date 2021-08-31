@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html>
+  <head>
+  <style>
+  h1 {
+  text-shadow: 3px 3px Black;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-<script>
+.center {
+  margin: auto;
+  width: 45%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
 
-    var array = new Array();
-    var p1 = prompt("Enter an integer (a negative integer to quit):");
+</style>
+
+  <meta charset="utf-8">
+  <title>Piyapat's example page</title>
+
+  <body style="background-color:Tomato">
+<div class="center" style="border: 4px solid black;background-color:Azure">
+  <h1 style="text-align:center;border:5px solid Tomato;font-family:tahoma;font-size:2.5vw;color:Tomato;">Khon Kaen<br> University</h1>
+
+  </head>
+   
+      <img src="images/kku.jpg" title="KKU" width="75%"
+      height="75%" alt="My test image" vspace="15">
+      <img src="images/coe_building.jpg" title="KKU" width="75%"
+      height="75%" alt="My test image">
+      <p style="font-family:tahoma";>Khon Kaen University has many faculties, such as:</p>
+      <ul>
+            <li style="font-family:tahoma">Engineering</li>
+            <li style="font-family:tahoma">Science</li>
+      </ul>
+      <p style="font-family:tahoma">Have you been informed about these faculties? If not, please visit the following link: <a href="https://www.kku.ac.th/" target="_blank">KKU</a></p>
+</div>
 
 
-    while (p1 > 0) {
-        p1.split(' ');
-        array.push(p1);
-        var p1 = prompt("Enter an integer (a negative integer to quit):");
-        console.log(array);
-    }
-
-    const numb = array.map((i) => Number(i));
-    var total = 0;
-    for (let i =0; i<array.length; i++)
-     total += numb[i];
-
-
-
-    var avg = total/array.length;
-    var a = avg.toFixed(2);
-    alert("For the list " + array + ", the average is " + a + ", the minimum is " + Math.min.apply(Math, numb) + ", and the maximum is " + Math.max.apply(Math, numb));
-
-
-</script>
-
-<head>
-</head>
-<body>
-</body>
-</html> 
+  </body>
+</html>
