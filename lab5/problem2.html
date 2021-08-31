@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+    var array = new Array();
+    var p1 = prompt("Enter an integer (a negative integer to quit):");
+
+
+    while (p1 > 0) {
+        p1.split(' ');
+        array.push(p1);
+        var p1 = prompt("Enter an integer (a negative integer to quit):");
+        console.log(array);
+    }
+
+    const numb = array.map((i) => Number(i));
+    var total = 0;
+    for (let i =0; i<array.length; i++)
+     total += numb[i];
+
+
+
+    var avg = total/array.length;
+    var a = avg.toFixed(2);
+    alert("For the list " + array + ", the average is " + a + ", the minimum is " + Math.min.apply(Math, numb) + ", and the maximum is " + Math.max.apply(Math, numb));
+
+
+</script>
+
+<head>
+</head>
+<body>
+</body>
+</html> 
