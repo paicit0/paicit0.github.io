@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script>
+      var array = new Array();
+
+      outer: for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+
+          var number = prompt("Enter a positive integer");
+          if (number % 1 == 0 && number > 0) break outer;
+        }
+      }
+      checkPrimes(number);
+      alert("For n = " + number + " prime numberbers are " + array);
+
+      function showPrimes(n) {
+        for (let i = 2; i < n; i++) {
+          if (checkPrime(i)) {
+            array.push(i);
+          }
+        }
+        return array;
+      }
+
+      function checkPrime(n) {
+        for (let i = 2; i < n; i++) {
+          if (n % i == 0) return false;
+        }
+        return true;
+      }
+
+
+    </script>
+<head>
+</head>
+<body>
+</body>
+</html> 
