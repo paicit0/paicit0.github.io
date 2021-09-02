@@ -13,6 +13,11 @@
         var p1 = prompt("Enter an integer (a negative integer to quit):");
     }
 
+    if (p1 < 0) {
+        alert("For the list " + array + ", the average is " + 0 + ", the minimum is 0" + ", and the maximum is 0");
+
+    }
+
     
     const numb = array.map((i) => Number(i));
     var total = 0;
