@@ -5,6 +5,7 @@
 
     var array = new Array();
     var p1 = prompt("Enter an integer (a negative integer to quit):");
+    array.push(p1);
 
 
     while (p1 > 0 && p1 % 1 == 0) {
@@ -13,12 +14,12 @@
         var p1 = prompt("Enter an integer (a negative integer to quit):");
     }
 
-    if (p1 < 0) {
+    if (array[0] < 0) {
         alert("For the list " + array + ", the average is " + 0 + ", the minimum is 0" + ", and the maximum is 0");
+        stopImmediatepropagation();
+    } 
 
-    }
 
-    
     const numb = array.map((i) => Number(i));
     var total = 0;
     for (let i =0; i<array.length; i++)
@@ -28,6 +29,7 @@
     var avg = total/array.length;
     var a = avg.toFixed(2);
     alert("For the list " + array + ", the average is " + a + ", the minimum is " + Math.min.apply(Math, numb) + ", and the maximum is " + Math.max.apply(Math, numb));
+
 
 
 </script>
